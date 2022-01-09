@@ -75,7 +75,7 @@ input {
   background: #fff;
 }
 
-#SearchResult {
+#searchResult {
   display: flex;
   flex-direction: column;
   height: 360px;
@@ -94,9 +94,9 @@ input {
 
 .user {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 80px;
-  padding: 12px;
+  padding: 14px;
   border-bottom: 1px solid black;
 }
 

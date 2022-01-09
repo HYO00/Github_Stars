@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin"); //설치한 웹팩 htm
 
 module.exports = {
   //entry 시작파일 output 결과물
-  entry: "./src/index.js",
+  entry: "./src/main.js",
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"), //현재경로 하위 dist 폴더를 의미

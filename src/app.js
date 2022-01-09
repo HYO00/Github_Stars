@@ -13,23 +13,11 @@ function App() {
   wrapper.id = "wrapper";
   document.getElementById("root").appendChild(container);
   document.getElementById("container").appendChild(wrapper);
-  //wrapper.textContent = "hello";
-
-  function changeTab(e) {
-    let currentTap = "api";
-    const selectedTab = e.target.classList.value;
-    if (selectedTab.includes("api")) {
-      currentTap = "api";
-    } else if (selectedTab.includes("local")) {
-      currentTap = "local";
-    }
-  }
 
   init();
 }
 
 function init() {
-  console.log("init");
   Header();
   Navbar();
   SearchBar();
