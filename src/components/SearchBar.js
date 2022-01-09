@@ -1,5 +1,4 @@
 function SearchBar() {
-  console.log("search");
   const wrapper = document.querySelector("#wrapper");
   const SearchBar = document.createElement("section");
   SearchBar.id = "SearchBar";

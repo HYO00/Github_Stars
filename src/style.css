@@ -74,3 +74,49 @@ input {
   font-size: 18px;
   background: #fff;
 }
+
+#SearchResult {
+  display: flex;
+  flex-direction: column;
+  height: 360px;
+}
+
+.user_profile {
+  width: 80px;
+  margin: 8px;
+  padding: 8px;
+}
+
+.users {
+  height: 100%;
+  overflow: scroll;
+}
+
+.user {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  padding: 12px;
+  border-bottom: 1px solid black;
+}
+
+.user_name {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  font-weight: 500;
+}
+
+.user img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user_profile img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.starBtn:hover svg {
+  fill: skyblue;
+}
