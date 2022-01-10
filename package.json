@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/HYO00/Github_Stars/issues"
   },
-  "homepage": "https://github.com/HYO00/Github_Stars#readme",
+  "homepage": "https://hyo00.github.io/Github_Stars/",
   "devDependencies": {
     "css-loader": "^6.5.1",
     "style-loader": "^3.3.1",
