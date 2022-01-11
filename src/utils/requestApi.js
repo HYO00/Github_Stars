@@ -1,4 +1,5 @@
 import axios from "axios";
+import { init } from "./addLike";
 
 async function searchUser(e) {
   const userList = document.querySelector(".users");
@@ -39,6 +40,7 @@ async function searchUser(e) {
       )
       .join("");
   }
+  init();
 }
 
 export { searchUser };
