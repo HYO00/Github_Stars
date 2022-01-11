@@ -13,6 +13,7 @@ function Navbar() {
   const tapBtn = document.querySelector("#subbar");
 
   tapBtn.addEventListener("click", changeTab);
+  //console.log("nav", currentTap);
 
   return (nav.innerHTML = `
 
