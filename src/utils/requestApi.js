@@ -1,6 +1,6 @@
 import axios from "axios";
 
-function requestApi() {
+function requestApi(username) {
   const search = document.querySelector("#search");
   const searchBtn = document.querySelector("#searchBtn");
   const inputValue = search.value;

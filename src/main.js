@@ -50,28 +50,8 @@ async function searchUser(e) {
   }
 }
 //subbar tap change css뿐만 아니라 로컬스토리지에 저장되어있는 값을 불러와야한다.
-function changeTab(e) {
-  const selectedTab = e.target.classList.value;
-  console.log(e.target.classList.value);
-  if (selectedTab.includes("api")) {
-    subbar.innerHTML = `
-            <nav>
-              <button class="subbar_menu api selected">API</button>
-              <button class="subbar_menu local">로컬</button>
-            </nav>
-    `;
-  } else if (selectedTab.includes("local")) {
-    subbar.innerHTML = `
-            <nav>
-            <button class="subbar_menu api">API</button>
-             <button class="subbar_menu local selected">로컬</button>
-            </nav>
-    `;
-  }
-}
 
-searchBtn.addEventListener("click", searchUser);
-tapBtn.addEventListener("click", changeTab);
+//tapBtn.addEventListener("click", changeTab);
 
 //즐겨찾기를 로컬스토리지에 저장하기 위해 필요한건?
 //즐겨찾기 클릭된 해당 user값

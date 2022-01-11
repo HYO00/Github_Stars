@@ -16,8 +16,9 @@ function SearchBar() {
   wrapper.appendChild(searchBar);
   searchBar.appendChild(inputField);
   inputField.append(input, searchBtn);
+  const search = document.querySelector("#search");
 
-  requestApi();
+  searchBtn.addEventListener("click", requestApi(search.value));
   searchBtn.innerHTML = `
       <svg
         xmlns="http://www.w3.org/2000/svg"
