@@ -1,4 +1,4 @@
-import requestApi from "../utils/requestApi";
+import { searchUser } from "../utils/requestApi";
 
 function SearchBar() {
   const searchBar = document.createElement("section");
@@ -16,9 +16,8 @@ function SearchBar() {
   wrapper.appendChild(searchBar);
   searchBar.appendChild(inputField);
   inputField.append(input, searchBtn);
-  const search = document.querySelector("#search");
+  searchBtn.addEventListener("click", searchUser);
 
-  searchBtn.addEventListener("click", requestApi(search.value));
   searchBtn.innerHTML = `
       <svg
         xmlns="http://www.w3.org/2000/svg"
